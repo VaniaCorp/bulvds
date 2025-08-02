@@ -1,0 +1,86 @@
+[
+  {
+    "name": "John Doe",
+    "title": "Realtor",
+    "desc": "I listed my property through the 'List Your Property' section, uploaded photos, and the Bulvds team verified everything quickly. The process was seamless and professional.",
+    "date": "26 Jul 2025",
+    "time": "15:10"
+  },
+  {
+    "name": "Maria Sanchez",
+    "title": "Homeowner",
+    "desc": "Bulvds made renting out my apartment so easy! The verification process was fast, and I found a tenant within days. Highly recommend their platform.",
+    "date": "12 Jun 2025",
+    "time": "09:45"
+  },
+  {
+    "name": "Kwame Mensah",
+    "title": "Property Agent",
+    "desc": "Uploading listings and managing client inquiries is a breeze with Bulvds. The tools provided help me close deals faster than ever before.",
+    "date": "03 May 2025",
+    "time": "13:22"
+  },
+  {
+    "name": "Aisha Bello",
+    "title": "Landlord",
+    "desc": "I appreciated the secure payment system and the support from the Bulvds team. My property was verified and listed in no time.",
+    "date": "18 Aug 2025",
+    "time": "11:30"
+  },
+  {
+    "name": "Samuel Lee",
+    "title": "Tenant",
+    "desc": "Finding a short-term rental was so simple. The listings were trustworthy and up-to-date, and the app made everything convenient.",
+    "date": "29 Jul 2025",
+    "time": "17:05"
+  },
+  {
+    "name": "Fatima Al-Farsi",
+    "title": "Real Estate Consultant",
+    "desc": "The Bulvds platform streamlines the entire property listing process. I can easily upload details, photos, and get my listings verified quickly.",
+    "date": "07 Sep 2025",
+    "time": "10:15"
+  },
+  {
+    "name": "David Kim",
+    "title": "Realtor",
+    "desc": "I love how Bulvds cuts through the chaos of renting. The verification process gives my clients peace of mind, and payments are always secure.",
+    "date": "21 Oct 2025",
+    "time": "14:40"
+  },
+  {
+    "name": "Chloe Dubois",
+    "title": "Apartment Owner",
+    "desc": "Listing my property was straightforward, and the support team answered all my questions. I found reliable tenants quickly.",
+    "date": "02 Nov 2025",
+    "time": "08:55"
+  },
+  {
+    "name": "Oluwaseun Adeyemi",
+    "title": "Lettings Manager",
+    "desc": "The Bulvds app is a game changer for agents. Managing multiple properties and communicating with clients has never been easier.",
+    "date": "15 Dec 2025",
+    "time": "16:20"
+  },
+  {
+    "name": "Emily Carter",
+    "title": "First-Time Landlord",
+    "desc": "I was nervous about listing my first property, but Bulvds made it simple. The verification gave me confidence, and I had my first tenant in a week.",
+    "date": "23 Jan 2026",
+    "time": "12:10"
+  },
+  {
+    "name": "Ahmed El-Sayed",
+    "title": "Property Owner",
+    "desc": "The listing process was intuitive, and the Bulvds team was very responsive. I appreciate the transparency and efficiency.",
+    "date": "05 Feb 2026",
+    "time": "19:00"
+  },
+  {
+    "name": "Priya Nair",
+    "title": "Rental Agent",
+    "desc": "Bulvds' platform helps me connect with more clients and close deals faster. The tools and support are top-notch.",
+    "date": "14 Mar 2026",
+    "time": "10:50"
+  }
+]

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+  <link rel="manifest" href="/assets/site.webmanifest">
+  <link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#082707">
+  <link rel="shortcut icon" href="/assets/favicon.ico">
+  <meta name="msapplication-TileColor" content="#082707">
+  <!-- <meta name="msapplication-config" content="/assets/browserconfig.xml"> -->
+  <meta name="theme-color" content="#082707">
+
+  <link rel="stylesheet" href="./styles/globals.css">
+  <link rel="stylesheet" href="./styles/map.css">
+  <link rel="stylesheet" href="./styles/rental.css">
+  <link rel="stylesheet" href="./styles/mobile-app.css">
+  <link rel="stylesheet" href="./styles/grid-display.css">
+  <link rel="stylesheet" href="./styles/client.css">
+  <link rel="stylesheet" href="./styles/responsive.css">
+  <link rel="stylesheet" href="./styles/interactive.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@3.0.0/dist/iconify-icon.min.js"></script>
+  <title>Bulvds</title>
+</head>
+
+<body>
+  <div id="container" role="presentation">
+    <header class="tr-white main-header">
+      <aside>
+        <img src="/assets/images/logo.svg" alt="Bulvds" title="Bulvds" aria-label="Bulvds" aria-labelledby="Bulvds"
+          loading="lazy" fetchpriority="auto">
+      </aside>
+      <nav class="tr-white">
+        <a href="">About Us</a>
+        <a href="">Blog</a>
+        <a href="#faq">FAQ</a>
+        <a href="">Partner as agent</a>
+        <div class="logo-container tr-white">
+          <img src="/assets/icon.svg" alt="Bulvds" title="Bulvds" width="32" aria-label="Bulvds"
+            aria-labelledby="Bulvds" loading="lazy" fetchpriority="auto">
+        </div>
+      </nav>
+      <button type="button" title="Get the App">Get the App</button>
+    </header>
+
+    <main>
+      <img src="/assets/images/hero/hero-bg.webp" alt="" id="main-img" loading="eager" fetchpriority="high">
+      <div id="main-display">
+        <div class="text-container" role="definition">
+          <h1 class="sr-only">Discover. List. Live Better</h1>
+          <h1>
+            <span>Discover.</span>
+            <span>List.</span>
+            <span>Live Better</span>
+          </h1>
+          <p>
+            From short stays to forever homes, Whether you're offering a space or looking for one,
+            Bulvds brings it all together. Real places, Real connections, Real experiences.
+          </p>
+        </div>
+
+        <section role="group" class="tr-white">
+          <form action="" id="select-form">
+            <div class="location">
+              <label for="location">Location</label>
+              <input type="text" id="location" name="location" placeholder="Where would you love to stay?"
+                autocomplete="off" />
+            </div>
+            <div>
+              <label for="price">Price</label>
+              <select name="price" id="price">
+                <option value="" selected>Choose a price range</option>
+              </select>
+              <iconify-icon icon="codicon:chevron-down" width="32" height="32"></iconify-icon>
+            </div>
+            <div>
+              <label for="duration">Duration</label>
+              <select name="duration" id="duration">
+                <option value="" selected>Select Duration</option>
+              </select>
+              <iconify-icon icon="codicon:chevron-down" width="32" height="32"></iconify-icon>
+            </div>
+
+            <button type="submit">
+              Find a home
+            </button>
+          </form>
+        </section>
+      </div>
+      <img src="/assets/images/hero/sofa.webp" alt="" id="sofa" loading="eager" fetchpriority="high">
+      <img src="/assets/images/hero/african-img.webp" alt="" id="african" loading="eager" fetchpriority="high">
+    </main>
+
+    <section role="application" id="map">
+      <img src="/assets/images/blur-line.svg" alt="" id="blur-line">
+      <img src="/assets/images/blur-line.svg" alt="" id="blur-line">
+      <img src="/assets/images/map.svg" alt="" id="map-img">
+
+      <section id="form-display">
+        <meter value=""></meter>
+        <form action="">
+          <header>
+            <span>
+              <iconify-icon icon="mingcute:user-4-fill" width="32" height="32"></iconify-icon>
+            </span>
+            <h3>Let's get to know you</h3>
+            <p>Small info, big moves - lets go!</p>
+          </header>
+        </form>
+      </section>
+    </section>
+
+    <section id="rental">
+      <div id="rental-header">
+        <span class="tr-black easy-rentals">EASY RENTALS</span>
+        <h2>
+          Renting Made Simple, Secure, and Stress-Free.
+        </h2>
+        <p>
+          Bulvds cuts the chaos of home renting. Find short-term pads or forever nests.
+          Secure payments, no drama.
+        </p>
+      </div>
+
+      <img src="/assets/images/living-room.webp" alt="Living Room" loading="lazy" fetchpriority="auto">
+    </section>
+
+    <section id="mobile-app">
+      <div id="mobile-app-display">
+        <div id="mobile-app-display-header">
+          <span class="tr-black">EXPLORE OUR MOBILE APP</span>
+
+          <h2>
+            Find Your Perfect Space in Minutes, or Months your choice
+          </h2>
+
+          <p>
+            Everything You Need, All in One App
+          </p>
+
+        </div>
+
+        <button type="button" class="btn-animate-up">
+          <strong>Get Started</strong> - It&apos;s free
+        </button>
+
+        <div id="images-container">
+          <img src="/assets/images/search-results.webp" alt="" loading="lazy" fetchpriority="auto">
+          <img src="/assets/images/wishlist.webp" alt="" loading="eager" fetchpriority="high">
+          <img src="/assets/images/onboarding.webp" alt="" loading="lazy" fetchpriority="auto">
+        </div>
+      </div>
+    </section>
+
+    <section id="grid-display">
+      <div class="grid-content">
+        <h4>smooth, confident Rent & Listing Experience for all Users .</h4>
+      </div>
+      <div class="grid-content">
+        <article>
+          <h3>Discover and list properties with ease.</h3>
+          <p>Find spaces based on your budget, location, etc.. Quick & easy </p>
+          <button type="button">
+            <strong>Get Started</strong> - It&apos;s free
+          </button>
+        </article>
+        <div class="grid-img-container">
+          <img src="/assets/images/grid-display/star.svg" alt="" loading="eager" fetchpriority="high">
+        </div>
+      </div>
+      <div class="grid-content">
+        <div id="man-container"></div>
+        <img src="/assets/images/grid-display/man.svg" alt="" loading="eager" fetchpriority="high">
+      </div>
+      <div class="grid-content">
+        <article>
+          <h3>Verified Listings</h3>
+          <p>Trustworthy and up-to-date information on all listings from our fully vetted partner agents.</p>
+          <button type="button">
+            Get the App
+          </button>
+          <div class="grid-img-container">
+            <img src="/assets/images/grid-display/waves.svg" alt="" loading="eager" fetchpriority="high">
+          </div>
+        </article>
+      </div>
+      <div class="grid-content">
+        <article>
+          <h3>🪫 Powerful tools for all agents.</h3>
+          <p>Close Deals in few Clicks & get clients easier than ever</p>
+          <button type="button">
+            Become a Partner
+          </button>
+        </article>
+        
+        <div class="grid-img-container">
+          <img src="/assets/images/grid-display/coins.svg" alt="" loading="eager" fetchpriority="high">
+        </div>
+      </div>
+    </section>
+
+    <section id="client-stories">
+      <span class="tr-black">TESTIMONIALS</span>
+      <h4>Client Stories</h4>
+
+      <div id="client-stories-display"></div>
+    </section>
+  </div>
+
+  <script src="/scripts/testimonials.js"></script>
+  <script src="/scripts/kiva.js"></script>
+  <script src="/scripts/main.js"></script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+    integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
