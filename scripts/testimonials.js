@@ -14,6 +14,17 @@ function createTestimonialCard(testimonial, idx) {
   const header = document.createElement('header');
   header.className = 'testimonial-header';
 
+  // Avatar image
+  const avatar = document.createElement('img');
+  avatar.className = 'testimonial-avatar';
+  avatar.src = testimonial.avatar;
+  avatar.alt = `${testimonial.name}'s profile picture`;
+  avatar.setAttribute('aria-hidden', 'true');
+
+  // User info container
+  const userInfo = document.createElement('div');
+  userInfo.className = 'testimonial-user-info';
+
   const name = document.createElement('h5');
   name.className = 'testimonial-name';
   name.id = `testimonial-title-${idx}`;
@@ -21,10 +32,19 @@ function createTestimonialCard(testimonial, idx) {
 
   const title = document.createElement('span');
   title.className = 'testimonial-user-title';
-  title.textContent = ` (${testimonial.title})`;
+  title.textContent = `@${testimonial.title}`;
 
-  name.appendChild(title);
-  header.appendChild(name);
+  userInfo.appendChild(name);
+  userInfo.appendChild(title);
+
+  // Social media icon
+  const socialIcon = document.createElement('div');
+  socialIcon.className = 'testimonial-social-icon';
+  socialIcon.innerHTML = `<iconify-icon icon="${testimonial.icon}" width="48" height="48"></iconify-icon>`;
+
+  header.appendChild(avatar);
+  header.appendChild(userInfo);
+  header.appendChild(socialIcon);
 
   // Description
   const desc = document.createElement('p');

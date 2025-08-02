@@ -22,7 +22,7 @@
     height: max-content;
     /* overflow: hidden; */
     position: relative;
-
+    
     ul {
       width: max-content;
       display: flex;
@@ -31,19 +31,20 @@
       animation: slideLeftToRight 120s linear infinite;
       animation-play-state: running;
       list-style: none;
-
+      
       /* Pause animation on hover */
       &:hover {
         animation-play-state: paused;
       }
-
+      
       li {
         width: 100%;
         max-width: 25em;
         height: 20em;
+        background: rgb(var(--color-gray));
         border-radius: var(--radius-base);
-        border: var(--border-blue);
-        padding: 1em;
+        border: var(--border-gray);
+        padding: 2.5em;
         flex-shrink: 0;
         transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.25s cubic-bezier(0.22, 1, 0.36, 1);
 
@@ -63,6 +64,52 @@
           justify-content: space-between;
           gap: 0.75em;
           /* text-align: justify; */
+
+          .testimonial-header {
+            display: flex;
+            align-items: center;
+            gap: 0.75em;
+            width: 100%;
+            justify-content: space-between;
+
+            .testimonial-avatar {
+              width: 3em;
+              height: 3em;
+              border-radius: 50%;
+              object-fit: cover;
+              flex-shrink: 0;
+            }
+
+            .testimonial-user-info {
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              flex: 1;
+
+              span {
+                padding: 0;
+                font-size: calc(var(--text-base) * 0.8);
+              }
+            }
+
+            .testimonial-social-icon {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex-shrink: 0;
+
+              iconify-icon {
+                width: 48px;
+                height: 48px;
+                font-size: 48px;
+                color: var(--color-primary);
+              }
+            }
+          }
+
+          footer {
+            opacity: 0.5;
+          }
         }
       }
     }
@@ -84,7 +131,26 @@
   #client-stories {
     #client-stories-display {
       ul {
-        animation-duration: 40s; /* Faster animation on mobile */
+        animation-duration: 120s; /* Faster animation on mobile */
+        
+        li {
+          article {
+            .testimonial-header {
+              .testimonial-avatar {
+                width: 2.5em;
+                height: 2.5em;
+              }
+
+              .testimonial-social-icon {
+                i {
+                  width: 36px;
+                  height: 36px;
+                  font-size: 36px;
+                }
+              }
+            }
+          }
+        }
       }
     }
   }

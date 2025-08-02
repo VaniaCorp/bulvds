@@ -2,85 +2,109 @@
   {
     "name": "John Doe",
     "title": "Realtor",
+    "avatar": "/assets/images/avatar.svg",
     "desc": "I listed my property through the 'List Your Property' section, uploaded photos, and the Bulvds team verified everything quickly. The process was seamless and professional.",
     "date": "26 Jul 2025",
-    "time": "15:10"
+    "time": "15:10",
+    "icon": "ri:twitter-x-fill"
   },
   {
     "name": "Maria Sanchez",
     "title": "Homeowner",
+    "avatar": "/assets/images/avatar.svg",
     "desc": "Bulvds made renting out my apartment so easy! The verification process was fast, and I found a tenant within days. Highly recommend their platform.",
     "date": "12 Jun 2025",
-    "time": "09:45"
+    "time": "09:45",
+    "icon": "basil:instagram-outline"
   },
   {
     "name": "Kwame Mensah",
     "title": "Property Agent",
+    "avatar": "/assets/images/avatar.svg",
     "desc": "Uploading listings and managing client inquiries is a breeze with Bulvds. The tools provided help me close deals faster than ever before.",
     "date": "03 May 2025",
-    "time": "13:22"
+    "time": "13:22",
+    "icon": "ri:twitter-x-fill"
   },
   {
     "name": "Aisha Bello",
     "title": "Landlord",
+    "avatar": "/assets/images/avatar.svg",
     "desc": "I appreciated the secure payment system and the support from the Bulvds team. My property was verified and listed in no time.",
     "date": "18 Aug 2025",
-    "time": "11:30"
+    "time": "11:30",
+    "icon": "basil:instagram-outline"
   },
   {
     "name": "Samuel Lee",
     "title": "Tenant",
+    "avatar": "/assets/images/avatar.svg",
     "desc": "Finding a short-term rental was so simple. The listings were trustworthy and up-to-date, and the app made everything convenient.",
     "date": "29 Jul 2025",
-    "time": "17:05"
+    "time": "17:05",
+    "icon": "ri:twitter-x-fill"
   },
   {
     "name": "Fatima Al-Farsi",
     "title": "Real Estate Consultant",
+    "avatar": "/assets/images/avatar.svg",
     "desc": "The Bulvds platform streamlines the entire property listing process. I can easily upload details, photos, and get my listings verified quickly.",
     "date": "07 Sep 2025",
-    "time": "10:15"
+    "time": "10:15",
+    "icon": "basil:instagram-outline"
   },
   {
     "name": "David Kim",
     "title": "Realtor",
+    "avatar": "/assets/images/avatar.svg",
     "desc": "I love how Bulvds cuts through the chaos of renting. The verification process gives my clients peace of mind, and payments are always secure.",
     "date": "21 Oct 2025",
-    "time": "14:40"
+    "time": "14:40",
+    "icon": "ri:twitter-x-fill"
   },
   {
     "name": "Chloe Dubois",
     "title": "Apartment Owner",
+    "avatar": "/assets/images/avatar.svg",
     "desc": "Listing my property was straightforward, and the support team answered all my questions. I found reliable tenants quickly.",
     "date": "02 Nov 2025",
-    "time": "08:55"
+    "time": "08:55",
+    "icon": "basil:instagram-outline"
   },
   {
     "name": "Oluwaseun Adeyemi",
     "title": "Lettings Manager",
+    "avatar": "/assets/images/avatar.svg",
     "desc": "The Bulvds app is a game changer for agents. Managing multiple properties and communicating with clients has never been easier.",
     "date": "15 Dec 2025",
-    "time": "16:20"
+    "time": "16:20",
+    "icon": "ri:twitter-x-fill"
   },
   {
     "name": "Emily Carter",
     "title": "First-Time Landlord",
+    "avatar": "/assets/images/avatar.svg",
     "desc": "I was nervous about listing my first property, but Bulvds made it simple. The verification gave me confidence, and I had my first tenant in a week.",
     "date": "23 Jan 2026",
-    "time": "12:10"
+    "time": "12:10",
+    "icon": "basil:instagram-outline"
   },
   {
     "name": "Ahmed El-Sayed",
     "title": "Property Owner",
+    "avatar": "/assets/images/avatar.svg",
     "desc": "The listing process was intuitive, and the Bulvds team was very responsive. I appreciate the transparency and efficiency.",
     "date": "05 Feb 2026",
-    "time": "19:00"
+    "time": "19:00",
+    "icon": "ri:twitter-x-fill"
   },
   {
     "name": "Priya Nair",
     "title": "Rental Agent",
+    "avatar": "/assets/images/avatar.svg",
     "desc": "Bulvds' platform helps me connect with more clients and close deals faster. The tools and support are top-notch.",
     "date": "14 Mar 2026",
-    "time": "10:50"
+    "time": "10:50",
+    "icon": "basil:instagram-outline"
   }
 ]

@@ -20,7 +20,7 @@
   --gradient-white: linear-gradient(180deg, #FFFFFF 0%, #DDE8D9 100%);
   --gradient-green: linear-gradient(180deg, #051500 0%, #061B00 100%);
   --gradient-card: linear-gradient(0deg, #EFEFEF, #EFEFEF),
-  linear-gradient(180deg, rgba(239, 239, 239, 0.2) 0%, rgba(239, 239, 239, 0) 60.27%);  
+  linear-gradient(180deg, rgba(239, 239, 239, 0.2) 0%, rgba(239, 239, 239, 0) 60.27%);
   --gradient-yellow: linear-gradient(180deg, #006C19 0%, #FFD06B 100%);
   --gradient-purple: linear-gradient(141.22deg, #EEE5FB -10.96%, #FFC7F9 109.46%);
   --gradient-blue: linear-gradient(127.09deg, #EDF5FF 44.23%, #D6DDFF 88.17%);
@@ -43,6 +43,7 @@
   --border-purple: 1.2px solid #7A066E33;
   --border-orange: 1.7px solid #F5D9C2;
   --border-blue: 1.4px solid #B2BFEA;
+  --border-gray: 1.4px solid #C6C8D7;
 
   --radius-sm: 10px;
   --radius-base: 28px;
@@ -137,7 +138,7 @@
   position: relative;
   overflow: hidden;
   background: rgba(var(--color-green-light), 1);
-  color: rgba(var(--color-blue), 1);
+  color: var(--color-blue);
   transition: color 0.25s cubic-bezier(.4,0,.2,1);
   z-index: 0;
 }
@@ -149,7 +150,7 @@
   bottom: 0;
   width: 100%;
   height: 0;
-  background: rgba(var(--color-blue), 1);
+  background: var(--color-blue);
   z-index: -1;
   transition: height 0.35s cubic-bezier(.4,0,.2,1);
   border-radius: inherit;
@@ -194,6 +195,7 @@ html, body {
   max-width: 120em;
   margin: 0 auto;
   font-family: var(--font-axiforma);
+  overflow-x: hidden;
 
   h1, h2, h3, h4, h5, h6{
     line-height: 100%;
