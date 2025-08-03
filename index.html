@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="./styles/mobile-app.css">
   <link rel="stylesheet" href="./styles/grid-display.css">
   <link rel="stylesheet" href="./styles/client.css">
+  <link rel="stylesheet" href="./styles/faq.css">
   <link rel="stylesheet" href="./styles/responsive.css">
   <link rel="stylesheet" href="./styles/interactive.css">
 
@@ -46,6 +47,9 @@
         </div>
       </nav>
       <button type="button" title="Get the App">Get the App</button>
+      <button type="button" class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <iconify-icon icon="mingcute:menu-line" width="24" height="24"></iconify-icon>
+      </button>
     </header>
 
     <main>
@@ -210,9 +214,21 @@
 
       <div id="client-stories-display"></div>
     </section>
+
+    <section id="faq">
+      <div id="faq-display">
+        <header>
+          <span class="tr-black">FAQs</span>
+          <h1>Still Have A Question?</h1>
+        </header>
+
+        <aside id="faq-list"></aside>
+      </div>
+    </section>
   </div>
 
   <script src="/scripts/testimonials.js"></script>
+  <script src="/scripts/faq.js"></script>
   <script src="/scripts/kiva.js"></script>
   <script src="/scripts/main.js"></script>
 

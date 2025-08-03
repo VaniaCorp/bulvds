@@ -131,7 +131,7 @@
   #client-stories {
     #client-stories-display {
       ul {
-        animation-duration: 120s; /* Faster animation on mobile */
+        animation-duration: 120s;
         
         li {
           article {

@@ -1,0 +1,28 @@
+[
+  {
+    "id": 1,
+    "question": "How Do I List My Property On Bulvds?",
+    "answer": "Go to the 'List Your Property' section on our website, fill out the details, upload photos, and submit. Our team will then review and verify your listing."
+  },
+  {
+    "id": 2,
+    "question": "What Payment Methods Are Accepted?",
+    "answer": "We accept various payment methods including credit/debit cards, bank transfers, and select digital wallets. All transactions are processed securely."
+  },
+  {
+    "id": 3,
+    "question": "How Can I Contact Customer Support?",
+    "answer": "You can contact our customer support team via the 'Contact Us' page on our website, email, or through our in-app chat for quick assistance."
+  },
+  {
+    "id": 4,
+    "question": "What Are The Rental Agreement Terms?",
+    "answer": "Rental agreement terms vary by property and are clearly outlined before booking. Please review the terms and conditions for each listing prior to confirming your rental."
+  },
+  {
+    "id": 5,
+    "question": "How Is Property Verification Handled?",
+    "answer": "All properties are thoroughly vetted by our team. We verify ownership, documentation, and conduct on-site inspections to ensure listings are accurate and trustworthy."
+  }
+]
+

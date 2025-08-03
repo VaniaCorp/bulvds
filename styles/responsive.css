@@ -1,37 +1,26 @@
-/* Responsive Design - Mobile First Approach */
-
-/* Large Desktop (1200px and up) */
 @media (min-width: 1200px) {
   :root {
     --heading-one: 96px;
     --heading-two: 72px;
     --heading-three: 48px;
   }
+
+  #container {
+    .main-header {
+      width: 100%;
+      max-width: max-content;
+    }
+  }
 }
 
-/* Desktop (992px - 1199px) */
 @media (max-width: 1199px) {
   :root {
     --heading-one: 80px;
     --heading-two: 60px;
     --heading-three: 40px;
   }
-  
-  .main-header {
-    gap: 2em !important;
-    padding: 0 1em !important;
-  }
-  
-  #select-form {
-    gap: 1.5em !important;
-  }
-  
-  #select-form span:first-child {
-    width: 18em !important;
-  }
 }
 
-/* Tablet (768px - 991px) */
 @media (max-width: 991px) {
   :root {
     --heading-one: 64px;
@@ -40,106 +29,21 @@
     --text-heading: 20px;
     --text-display: 18px;
   }
-  
-  .main-header {
-    flex-direction: column;
-    gap: 1em;
-    padding: 1em;
-    position: relative;
-    top: 0;
-    transform: none;
-    left: 0;
-    width: 100%;
-    max-width: none;
-  }
-  
-  .main-header nav {
-    order: 3;
-    width: 100%;
-    justify-content: center;
-    gap: 1em;
-  }
-  
-  .main-header button {
-    order: 2;
-  }
-  
-  main {
-    height: auto;
-    min-height: 100vh;
-    padding-top: 8em;
-  }
-  
-  #main-display {
-    margin: 0;
-    padding: 2em 1em;
-  }
-  
-  .text-container {
-    max-width: 100%;
-  }
-  
-  #select-form {
-    flex-direction: column;
-    gap: 1em;
-    width: 100%;
-    max-width: 30em;
-  }
-  
-  #select-form span {
-    width: 100% !important;
-  }
-  
-  #sofa {
-    position: relative;
-    bottom: auto;
-    left: auto;
-    transform: none;
-    width: 100%;
-    max-width: 100%;
-    margin-top: 2em;
-  }
-  
-  #african {
-    display: none;
-  }
-  
-  #map {
-    height: auto;
-    min-height: 60vh;
-    padding: 4em 1em;
-  }
-  
-  #form-display {
-    margin: 0;
-    max-width: 100%;
-  }
-  
-  #rental {
-    padding: 6em 1em;
-  }
-  
-  #rental-header {
-    max-width: 100%;
-  }
-  
-  #mobile-app-display {
-    padding: 4em 2em 0 2em;
-    margin: 0 1em;
-  }
-  
-  #images-container {
-    flex-direction: column;
-    gap: 2em;
-  }
-  
-  #images-container img {
-    width: 100%;
-    max-width: 20em;
+
+  #container {
+    .main-header {
+      width: 100%;
+      /* border: solid; */
+      border-radius: 0;
+      top: 0;
+
+      button[title="Get the App"] {
+        display: none;
+      }
+    }
   }
 }
 
-/* Mobile (480px - 767px) */
 @media (max-width: 767px) {
   :root {
     --heading-one: 48px;
@@ -149,81 +53,8 @@
     --text-display: 16px;
     --text-base: 14px;
   }
-  
-  .main-header nav {
-    width: 100%;
-    max-width: 100%;
-    gap: 0.5em;
-  }
-  
-  .main-header nav a {
-    font-size: 0.9em;
-    padding: 0.5em 0.75em;
-  }
-  
-  .main-header button {
-    padding: 1em 1.5em;
-    font-size: 0.9em;
-  }
-  
-  main {
-    padding-top: 6em;
-  }
-  
-  #main-display {
-    padding: 1em;
-    gap: 2em;
-  }
-  
-  .text-container h1 {
-    font-size: var(--heading-one);
-  }
-  
-  .text-container p {
-    font-size: var(--text-display);
-  }
-  
-  section[role="group"] {
-    border-radius: var(--radius-base);
-  }
-
-  #select-form {
-    max-width: 100%;
-  }
-  
-  #select-form button {
-    width: 100%;
-    margin-left: 0;
-  }
-  
-  #map {
-    padding: 2em 1em;
-  }
-  
-  #form-display form {
-    padding: 1.5em 1em;
-  }
-  
-  #rental {
-    padding: 4em 1em;
-    gap: 3em;
-  }
-  
-  #mobile-app-display {
-    padding: 3em 1em 0 1em;
-    margin: 0 0.5em;
-  }
-  
-  #mobile-app-display-header {
-    text-align: center;
-  }
-  
-  #mobile-app-display-header button {
-    width: 100%;
-  }
 }
 
-/* Small Mobile (320px - 479px) */
 @media (max-width: 479px) {
   :root {
     --heading-one: 36px;
@@ -232,100 +63,5 @@
     --text-heading: 16px;
     --text-display: 14px;
     --text-base: 12px;
-  }
-  
-  .main-header {
-    padding: 0.5em;
-  }
-  
-  .main-header nav {
-    flex-direction: row;
-    gap: 0.25em;
-  }
-  
-  .main-header nav a {
-    font-size: 0.8em;
-    padding: 0.4em 0.6em;
-  }
-  
-  main {
-    padding-top: 4em;
-  }
-  
-  #main-display {
-    padding: 0.5em;
-    gap: 1.5em;
-  }
-  
-  #select-form {
-    display: none;
-  }
-  
-  #map {
-    padding: 1em 0.5em;
-  }
-  
-  #form-display form {
-    padding: 1em 0.75em;
-  }
-  
-  #rental {
-    padding: 2em 0.5em;
-  }
-  
-  #mobile-app-display {
-    padding: 2em 0.5em 0 0.5em;
-    margin: 0 0.25em;
-  }
-}
-
-/* Landscape Mobile */
-@media (max-width: 767px) and (orientation: landscape) {
-  main {
-    padding-top: 4em;
-  }
-  
-  #main-display {
-    gap: 1.5em;
-  }
-  
-  .text-container h1 {
-    font-size: calc(var(--heading-one) * 0.8);
-  }
-  
-  #select-form {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  #select-form span {
-    width: calc(50% - 0.5em) !important;
-    min-width: 12em;
-  }
-  
-  #select-form button {
-    width: auto;
-    margin-left: 0.5em;
-  }
-}
-
-/* High DPI Displays */
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  /* Ensure crisp images on retina displays */
-  img {
-    image-rendering: -webkit-optimize-contrast;
-    image-rendering: crisp-edges;
-  }
-}
-
-/* Reduced Motion */
-@media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
   }
 }

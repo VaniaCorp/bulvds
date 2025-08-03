@@ -181,6 +181,7 @@ button {
   font-weight: 500;
   cursor: pointer;
   font-size: var(--text-base);
+  width: max-content;
 }
 
 a {
@@ -207,7 +208,6 @@ html, body {
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
-    max-width: max-content;
     display: flex;
     align-items: center;
     justify-content: space-between;
