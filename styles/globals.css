@@ -25,6 +25,7 @@
   --gradient-purple: linear-gradient(141.22deg, #EEE5FB -10.96%, #FFC7F9 109.46%);
   --gradient-blue: linear-gradient(127.09deg, #EDF5FF 44.23%, #D6DDFF 88.17%);
   --gradient-orange: linear-gradient(122.49deg, #CE5F03 22.3%, #CE5F03 89.91%);
+  --gradient-dk-green: linear-gradient(180deg, #051500 0%, #061B00 100%);
 
 
   --font-axiforma: "Axiforma", sans-serif;

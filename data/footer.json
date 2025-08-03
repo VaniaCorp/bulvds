@@ -1,0 +1,38 @@
+{
+  "company": {
+    "title": "Company",
+    "links": [
+      { "label": "About", "href": "/#about" },
+      { "label": "FAQs", "href": "/#faq" },
+      { "label": "Blog", "href": "/#blog" },
+      { "label": "Careers", "href": "/" }
+    ]
+  },
+  "why": {
+    "title": "Why Bulvds",
+    "links": [
+      { "label": "Find Your Home", "href": "/" },
+      { "label": "Tenant Verification", "href": "/" },
+      { "label": "Partner as Agent", "href": "/" },
+      { "label": "Support", "href": "/#support" }
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "phone": "070 0000 0000",
+    "email": "hello@bulvds.com"
+  },
+  "legal": {
+    "links": [
+      { "label": "Terms & Condition", "href": "/terms" },
+      { "label": "Policies", "href": "/policies" }
+    ]
+  },
+  "social": [
+    { "icon": "prime:linkedin", "href": "https://linkedin.com/company/bulvds", "label": "LinkedIn" },
+    { "icon": "ri:whatsapp-line", "href": "https://wa.me/2347000000000", "label": "WhatsApp" },
+    { "icon": "mdi:facebook", "href": "https://facebook.com/bulvds", "label": "Facebook" },
+    { "icon": "hugeicons:instagram", "href": "https://instagram.com/bulvds", "label": "Instagram" },
+    { "icon": "ri:twitter-x-line", "href": "https://x.com/bulvds", "label": "Twitter(X)" }
+  ]
+}

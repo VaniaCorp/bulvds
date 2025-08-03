@@ -1,0 +1,139 @@
+footer {
+  width: 100%;
+  padding: 6em 0;
+  background-image: url('/assets/images/footer.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--gradient-dk-green);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  #footer-container {
+    width: 100%;
+    max-width: 75em;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 4em;
+
+    article {
+      width: 100%;
+      max-width: 30em;
+      color: rgb(var(--color-white));
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+
+      span {
+        display: flex;
+        align-items: center;
+        gap: 0.24em;
+
+        h3 {
+          font-size: 1.5em;
+          font-weight: 700;
+        }
+      }
+
+      p {
+        font-size: var(--text-display);
+      }
+    }
+
+    #links-container {
+      display: flex;
+      align-items: flex-start;
+      gap: 4em;
+
+      section {
+        width: max-content;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+
+        h4 {
+          color: rgba(var(--color-white), 0.7);
+          font-size: var(--text-display);
+          font-weight: 400;
+        }
+
+        ul {
+          list-style: none;
+          color: rgb(var(--color-white));
+          display: flex;
+          flex-direction: column;
+          gap: 0.75em;
+        }
+      }
+    }
+  }
+
+  hr {
+    width: 100%;
+    max-width: 75em;
+    margin: 2em auto;
+    border: 1px solid rgba(var(--color-white), 0.4);
+  }
+
+  #foot {
+    width: 100%;
+    max-width: 75em;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    #copyright {
+      width: max-content;
+      display: flex;
+      color: rgba(var(--color-white), 1);
+      gap: 0.24em;
+    }
+  }
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 900px) {
+  footer {
+    padding: 3em 0;
+
+    #footer-container, #foot {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 2.5em;
+
+      article {
+        max-width: 100%;
+      }
+
+      #links-container {
+        flex-direction: column;
+        gap: 2em;
+      }
+    }
+
+    #foot {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1.5em;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  footer {
+    padding: 2em 0;
+
+    #footer-container, #foot {
+      gap: 1.5em;
+      padding: 0 1em;
+    }
+
+    hr {
+      margin: 1.2em auto;
+    }
+  }
+}

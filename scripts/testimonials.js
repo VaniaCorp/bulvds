@@ -53,7 +53,7 @@ function createTestimonialCard(testimonial, idx) {
   desc.textContent = testimonial.desc;
 
   // Meta (date and time)
-  const meta = document.createElement('footer');
+  const meta = document.createElement('section');
   meta.className = 'testimonial-meta';
   meta.id = `testimonial-meta-${idx}`;
   meta.setAttribute('aria-label', 'Testimonial date and time');
