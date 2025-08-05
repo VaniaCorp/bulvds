@@ -55,7 +55,7 @@
     </header>
 
     <main>
-      <img src="/assets/images/hero/hero-bg.webp" alt="" id="main-img" loading="eager" fetchpriority="high">
+      <img src="/assets/images/hero-bg.svg" alt="" id="main-img" loading="eager" fetchpriority="high">
       <div id="main-display">
         <div class="text-container" role="definition">
           <h1 class="sr-only">Discover. List. Live Better</h1>
@@ -70,7 +70,11 @@
           </p>
         </div>
 
-        <section role="group" class="tr-white">
+        <button type="button" class="btn-animate-up hero-btn">
+          <strong>Get Started</strong> - It&apos;s free
+        </button>
+
+        <section role="group" class="tr-white map-form">
           <form action="" id="select-form">
             <div class="location">
               <label for="location">Location</label>
@@ -91,15 +95,16 @@
               </select>
               <iconify-icon icon="codicon:chevron-down" width="32" height="32"></iconify-icon>
             </div>
-
+  
             <button type="submit">
               Find a home
             </button>
           </form>
         </section>
       </div>
-      <img src="/assets/images/hero/sofa.webp" alt="" id="sofa" loading="eager" fetchpriority="high">
-      <img src="/assets/images/hero/african-img.webp" alt="" id="african" loading="eager" fetchpriority="high">
+      
+      <!-- <img src="/assets/images/hero/sofa.webp" alt="" id="sofa" loading="eager" fetchpriority="high"> -->
+      <!-- <img src="/assets/images/hero/african-img.webp" alt="" id="african" loading="eager" fetchpriority="high"> -->
     </main>
 
     <section role="application" id="map">
@@ -108,7 +113,13 @@
       <img src="/assets/images/map.svg" alt="" id="map-img">
 
       <section id="form-display">
-        <meter value=""></meter>
+        <div class="progress-container">
+          <div id="progress-steps"></div>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 0%"></div>
+          </div>
+        </div>
+
         <form action="">
           <header>
             <span>
@@ -117,6 +128,11 @@
             <h3>Let's get to know you</h3>
             <p>Small info, big moves - lets go!</p>
           </header>
+
+          <div class="form-content">
+            <div id="form-dots"></div>
+          </div>
+
         </form>
       </section>
     </section>
@@ -283,6 +299,8 @@
   </div>
 
   <script src="/scripts/testimonials.js"></script>
+  <script src="/scripts/map-pop.js"></script>
+  <script src="/scripts/map-form.js"></script>
   <script src="/scripts/faq.js"></script>
   <script src="/scripts/apartments.js"></script>
   <script src="/scripts/footer.js"></script>
