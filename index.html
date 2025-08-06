@@ -26,6 +26,7 @@
   <link rel="stylesheet" href="./styles/footer.css">
   <link rel="stylesheet" href="./styles/responsive.css">
   <link rel="stylesheet" href="./styles/interactive.css">
+  <link rel="stylesheet" href="./styles/apartments-marquee.css">
 
   <script src="https://cdn.jsdelivr.net/npm/iconify-icon@3.0.0/dist/iconify-icon.min.js"></script>
   <title>Bulvds</title>
@@ -74,38 +75,39 @@
           <strong>Get Started</strong> - It&apos;s free
         </button>
 
-        <section role="group" class="tr-white map-form">
-          <form action="" id="select-form">
-            <div class="location">
-              <label for="location">Location</label>
-              <input type="text" id="location" name="location" placeholder="Where would you love to stay?"
-                autocomplete="off" />
-            </div>
-            <div>
-              <label for="price">Price</label>
-              <select name="price" id="price">
-                <option value="" selected>Choose a price range</option>
-              </select>
-              <iconify-icon icon="codicon:chevron-down" width="32" height="32"></iconify-icon>
-            </div>
-            <div>
-              <label for="duration">Duration</label>
-              <select name="duration" id="duration">
-                <option value="" selected>Select Duration</option>
-              </select>
-              <iconify-icon icon="codicon:chevron-down" width="32" height="32"></iconify-icon>
-            </div>
-  
-            <button type="submit">
-              Find a home
-            </button>
-          </form>
-        </section>
       </div>
-      
+
       <!-- <img src="/assets/images/hero/sofa.webp" alt="" id="sofa" loading="eager" fetchpriority="high"> -->
       <!-- <img src="/assets/images/hero/african-img.webp" alt="" id="african" loading="eager" fetchpriority="high"> -->
     </main>
+    
+    <section role="group" class="tr-black-thick map-form">
+      <form action="" id="select-form">
+        <div class="location">
+          <label for="location">Location</label>
+          <input type="text" id="location" name="location" placeholder="Where would you love to stay?"
+            autocomplete="off" />
+        </div>
+        <div>
+          <label for="price">Price</label>
+          <select name="price" id="price">
+            <option value="" selected>Choose a price range</option>
+          </select>
+          <iconify-icon icon="codicon:chevron-down" width="32" height="32"></iconify-icon>
+        </div>
+        <div>
+          <label for="duration">Duration</label>
+          <select name="duration" id="duration">
+            <option value="" selected>Select Duration</option>
+          </select>
+          <iconify-icon icon="codicon:chevron-down" width="32" height="32"></iconify-icon>
+        </div>
+
+        <button type="submit">
+          Find a home
+        </button>
+      </form>
+    </section>
 
     <section role="application" id="map">
       <img src="/assets/images/blur-line.svg" alt="" id="blur-line">
@@ -136,6 +138,10 @@
         </form>
       </section>
     </section>
+
+
+
+    <section id="apartments-display"></section>
 
     <section id="rental">
       <div id="rental-header">
@@ -179,51 +185,61 @@
       </div>
     </section>
 
-    <section id="grid-display">
-      <div class="grid-content">
-        <h4>smooth, confident Rent & Listing Experience for all Users .</h4>
-      </div>
-      <div class="grid-content">
-        <article>
-          <h3>Discover and list properties with ease.</h3>
-          <p>Find spaces based on your budget, location, etc.. Quick & easy </p>
-          <button type="button">
-            <strong>Get Started</strong> - It&apos;s free
-          </button>
-        </article>
-        <div class="grid-img-container">
-          <img src="/assets/images/grid-display/star.svg" alt="" loading="eager" fetchpriority="high">
-        </div>
-      </div>
-      <div class="grid-content">
-        <div id="man-container"></div>
-        <img src="/assets/images/grid-display/man.svg" alt="" loading="eager" fetchpriority="high">
-      </div>
-      <div class="grid-content">
-        <article>
-          <h3>Verified Listings</h3>
-          <p>Trustworthy and up-to-date information on all listings from our fully vetted partner agents.</p>
-          <button type="button">
-            Get the App
-          </button>
-          <div class="grid-img-container">
-            <img src="/assets/images/grid-display/waves.svg" alt="" loading="eager" fetchpriority="high">
-          </div>
-        </article>
-      </div>
-      <div class="grid-content">
-        <article>
-          <h3>🪫 Powerful tools for all agents.</h3>
-          <p>Close Deals in few Clicks & get clients easier than ever</p>
-          <button type="button">
-            Become a Partner
-          </button>
-        </article>
+    <section id="second-section">
 
-        <div class="grid-img-container">
-          <img src="/assets/images/grid-display/coins.svg" alt="" loading="eager" fetchpriority="high">
-        </div>
+      <div class="video-container">
+        <video autoplay loop muted playsinline>
+          <source src="/assets//videos/animation-two.mp4" type="video/mp4">
+          <source src="/assets//videos/animation-two.webm" type="video/webm">
+        </video>
       </div>
+
+      <section id="grid-display">
+        <div class="grid-content">
+          <h4>smooth, confident Rent & Listing Experience for all Users .</h4>
+        </div>
+        <div class="grid-content">
+          <article>
+            <h3>Discover and list properties with ease.</h3>
+            <p>Find spaces based on your budget, location, etc.. Quick & easy </p>
+            <button type="button">
+              <strong>Get Started</strong> - It&apos;s free
+            </button>
+          </article>
+          <div class="grid-img-container">
+            <img src="/assets/images/grid-display/star.svg" alt="" loading="eager" fetchpriority="high">
+          </div>
+        </div>
+        <div class="grid-content">
+          <div id="man-container"></div>
+          <img src="/assets/images/grid-display/man.svg" alt="" loading="eager" fetchpriority="high">
+        </div>
+        <div class="grid-content">
+          <article>
+            <h3>Verified Listings</h3>
+            <p>Trustworthy and up-to-date information on all listings from our fully vetted partner agents.</p>
+            <button type="button">
+              Get the App
+            </button>
+            <div class="grid-img-container">
+              <img src="/assets/images/grid-display/waves.svg" alt="" loading="eager" fetchpriority="high">
+            </div>
+          </article>
+        </div>
+        <div class="grid-content">
+          <article>
+            <h3>🪫 Powerful tools for all agents.</h3>
+            <p>Close Deals in few Clicks & get clients easier than ever</p>
+            <button type="button">
+              Become a Partner
+            </button>
+          </article>
+
+          <div class="grid-img-container">
+            <img src="/assets/images/grid-display/coins.svg" alt="" loading="eager" fetchpriority="high">
+          </div>
+        </div>
+      </section>
     </section>
 
     <section id="client-stories">
@@ -255,14 +271,10 @@
 
         <button type="button" class="btn-animate-up">
           Get the App
-        </button>
+      </div>
 
-        <div class="video-container">
-          <video autoplay loop muted playsinline>
-            <source src="/assets//videos/animation-two.mp4" type="video/mp4">
-            <source src="/assets//videos/animation-two.webm" type="video/webm">
-          </video>
-        </div>
+      <div class="image-container">
+        <img src="/assets/images/spaces-img.webp" alt="" id="spaces-img" loading="lazy" fetchpriority="auto">
       </div>
     </section>
 
@@ -274,12 +286,12 @@
             <h3>Bulvds</h3>
           </span>
           <p>
-            Bulvds mission is building a future where everyone gets a fair chance at 
+            Bulvds mission is building a future where everyone gets a fair chance at
             efficient and affordable living spaces.
           </p>
         </article>
 
-        <aside id="links-container"></aside>        
+        <aside id="links-container"></aside>
       </div>
 
       <hr>
