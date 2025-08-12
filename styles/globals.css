@@ -124,6 +124,13 @@
   font-display: swap;
 }
 
+.title-container {
+  display: block;
+  overflow: hidden;
+  /* margin: 0 auto; */
+  height: calc(max-content + 1em);
+}
+
 .tr-white {
   background: rgba(var(--color-white), 0.12);
   border: 1px solid rgba(var(--color-white), 0.14);
@@ -255,14 +262,25 @@ body {
     height: 140vh;
     max-height: 90em;
 
-    #main-img {
+    picture {
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
       z-index: 0;
-      object-fit: cover;
+
+      source {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     }
 
     #sofa {

@@ -56,7 +56,12 @@
     </header>
 
     <main>
-      <img src="/assets/images/hero-bg.svg" alt="" id="main-img" loading="eager" fetchpriority="high">
+      <picture id="main-img" loading="eager" fetchpriority="high">
+        <source srcset="/assets/images/hero-bg.svg" media="(min-width: 992px)" type="image/svg+xml">
+        <source srcset="/assets/images/hero/mobile-bg.webp" media="(max-width: 991px)" type="image/webp">
+        <img src="/assets/images/hero-bg.svg" alt="" loading="eager" fetchpriority="high">
+      </picture>
+
       <div id="main-display">
         <div class="text-container" role="definition">
           <h1 class="sr-only">Discover. List. Live Better</h1>
@@ -80,7 +85,7 @@
       <!-- <img src="/assets/images/hero/sofa.webp" alt="" id="sofa" loading="eager" fetchpriority="high"> -->
       <!-- <img src="/assets/images/hero/african-img.webp" alt="" id="african" loading="eager" fetchpriority="high"> -->
     </main>
-    
+
     <section role="group" class="tr-black-thick map-form">
       <form action="" id="select-form">
         <div class="location">
@@ -109,7 +114,7 @@
       </form>
     </section>
 
-    <section role="application" id="map">
+    <section role="application" id="map" data-parallax="true">
       <img src="/assets/images/blur-line.svg" alt="" id="blur-line">
       <img src="/assets/images/blur-line.svg" alt="" id="blur-line">
       <img src="/assets/images/map.svg" alt="" id="map-img">
@@ -139,16 +144,16 @@
       </section>
     </section>
 
+    <section id="apartments-display" data-parallax="true"></section>
 
-
-    <section id="apartments-display"></section>
-
-    <section id="rental">
+    <section id="rental" data-parallax="true">
       <div id="rental-header">
         <span class="tr-black easy-rentals">EASY RENTALS</span>
-        <h2>
-          Renting Made Simple, Secure, and Stress-Free.
-        </h2>
+        <div class="title-container">
+          <h2 class="animate-paragraph">
+            Renting Made Simple, Secure, and Stress-Free.
+          </h2>
+        </div>
         <p>
           Bulvds cuts the chaos of home renting. Find short-term pads or forever nests.
           Secure payments, no drama.
@@ -158,14 +163,16 @@
       <img src="/assets/images/living-room.webp" alt="Living Room" loading="lazy" fetchpriority="auto">
     </section>
 
-    <section id="mobile-app">
+    <section id="mobile-app" data-parallax="true">
       <div id="mobile-app-display">
         <div id="mobile-app-display-header">
           <span class="tr-black">EXPLORE OUR MOBILE APP</span>
 
-          <h2>
-            Find Your Perfect Space in Minutes, or Months your choice
-          </h2>
+          <div class="title-container">
+            <h2 class="animate-paragraph">
+              Find Your Perfect Space in Minutes, or Months your choice
+            </h2>
+          </div>
 
           <p>
             Everything You Need, All in One App
@@ -185,7 +192,7 @@
       </div>
     </section>
 
-    <section id="second-section">
+    <section id="second-section" data-parallax="true">
 
       <div class="video-container">
         <video autoplay loop muted playsinline>
@@ -242,14 +249,16 @@
       </section>
     </section>
 
-    <section id="client-stories">
+    <section id="client-stories" data-parallax="true">
       <span class="tr-black">TESTIMONIALS</span>
-      <h4>Client Stories</h4>
+      <div class="title-container">
+        <h4 class="animate-title">Client Stories</h4>
+      </div>
 
       <div id="client-stories-display"></div>
     </section>
 
-    <section id="faq">
+    <section id="faq" data-parallax="true">
       <div id="faq-display">
         <header>
           <span class="tr-black">FAQs</span>
@@ -260,7 +269,7 @@
       </div>
     </section>
 
-    <section id="space">
+    <section id="space" data-parallax="true">
       <div id="space-display">
         <header>
           <span class="tr-black">EXPERIENCE</span>
@@ -310,7 +319,18 @@
     </footer>
   </div>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+    integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+    integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/SplitText.min.js"
+    integrity="sha512-wOeEC+9qERAzhliwBFPDb6t8TiFFxdxG8vhK/Ygs7TuC44bpg8pg/X2/U/u+0X4fK05wb9id1EIipnF02+CFQw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="/scripts/testimonials.js"></script>
+
+
   <script src="/scripts/map-pop.js"></script>
   <script src="/scripts/map-form.js"></script>
   <script src="/scripts/faq.js"></script>
@@ -318,11 +338,7 @@
   <script src="/scripts/footer.js"></script>
   <script src="/scripts/kiva.js"></script>
   <script src="/scripts/main.js"></script>
-
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
-    integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="/scripts/text-animations.js"></script>
 </body>
 
 </html>

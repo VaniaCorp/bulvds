@@ -16,6 +16,11 @@
     justify-content: center;
     gap: 3em;
     text-align: center;
+    /* border: solid; */
+
+    .title-container {
+      max-width: 60em;
+    }
 
     .easy-rentals {
       padding: var(--padding-sm);

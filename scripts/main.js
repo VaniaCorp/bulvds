@@ -3,7 +3,13 @@ document.addEventListener('DOMContentLoaded', function() {
   // Get the elements
   const heroBtn = document.querySelector('.hero-btn');
   const mapForm = document.querySelector('.map-form');
-  
+  const mapSection = document.getElementById('map');
+
+  // Hide #map by default
+  if (mapSection) {
+    mapSection.style.display = 'none';
+  }
+
   // Add click event listener to hero button
   heroBtn.addEventListener('click', function() {
     // Show and animate the map form in
@@ -14,7 +20,10 @@ document.addEventListener('DOMContentLoaded', function() {
       duration: 0.6,
       ease: "power2.out",
       onComplete: function() {
-        // Smoothly scroll to the map form
+        // Show #map and scroll to .map-form
+        if (mapSection) {
+          mapSection.style.display = '';
+        }
         mapForm.scrollIntoView({ behavior: 'smooth', block: 'center' });
       }
     });
@@ -175,3 +184,215 @@ document.addEventListener('DOMContentLoaded', function() {
   window.addEventListener('DOMContentLoaded', onBgScroll);
   window.addEventListener('resize', onBgScroll);
 })();
+
+// Mobile Menu Functionality
+(function() {
+  const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+  const mobileNav = document.querySelector('.main-header nav');
+  
+  if (!mobileMenuToggle || !mobileNav) return;
+
+  let isMenuOpen = false;
+
+  // Function to open the mobile menu
+  function openMobileMenu() {
+    isMenuOpen = true;
+    mobileMenuToggle.classList.add('active');
+    mobileMenuToggle.setAttribute('aria-expanded', 'true');
+    mobileNav.classList.add('mobile-open');
+    
+    // Lock body scroll
+    document.body.style.overflow = 'hidden';
+    
+    // Add staggered animation classes to menu items
+    const menuItems = mobileNav.querySelectorAll('a');
+    menuItems.forEach((item, index) => {
+      setTimeout(() => {
+        item.style.transitionDelay = `${index * 0.1}s`;
+      }, 50);
+    });
+  }
+
+  // Function to close the mobile menu
+  function closeMobileMenu() {
+    isMenuOpen = false;
+    mobileMenuToggle.classList.remove('active');
+    mobileMenuToggle.setAttribute('aria-expanded', 'false');
+    mobileNav.classList.remove('mobile-open');
+    
+    // Restore body scroll
+    document.body.style.overflow = '';
+    
+    // Remove transition delays
+    const menuItems = mobileNav.querySelectorAll('a');
+    menuItems.forEach(item => {
+      item.style.transitionDelay = '';
+    });
+  }
+
+  // Toggle mobile menu
+  function toggleMobileMenu() {
+    if (isMenuOpen) {
+      closeMobileMenu();
+    } else {
+      openMobileMenu();
+    }
+  }
+
+  // Event listeners
+  mobileMenuToggle.addEventListener('click', toggleMobileMenu);
+
+  // Close menu when clicking outside
+  document.addEventListener('click', function(event) {
+    if (isMenuOpen && 
+        !mobileMenuToggle.contains(event.target) && 
+        !mobileNav.contains(event.target)) {
+      closeMobileMenu();
+    }
+  });
+
+  // Close menu on escape key
+  document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape' && isMenuOpen) {
+      closeMobileMenu();
+    }
+  });
+
+  // Close menu on window resize (if switching to desktop)
+  window.addEventListener('resize', function() {
+    if (window.innerWidth > 991 && isMenuOpen) {
+      closeMobileMenu();
+    }
+  });
+})();
+
+// Parallax Scrolling Functionality
+(function() {
+  // Get parallax elements
+  const parallaxElements = document.querySelectorAll('[data-parallax]');
+  const heroBg = document.querySelector('#main-img');
+  const heroContent = document.querySelector('#main-display');
+  const sofaImage = document.querySelector('#sofa');
+  const africanImage = document.querySelector('#african');
+  
+  if (!parallaxElements.length && !heroBg && !heroContent) return;
+
+  let ticking = false;
+  let lastScrollY = window.scrollY;
+
+  function updateParallax() {
+    const scrollY = window.scrollY;
+    const windowHeight = window.innerHeight;
+    const documentHeight = document.documentElement.scrollHeight;
+
+    // Hero section parallax
+    if (heroBg) {
+      const heroRect = heroBg.getBoundingClientRect();
+      const heroTop = heroRect.top;
+      const heroHeight = heroRect.height;
+      
+      // Only apply parallax when hero is in view
+      if (heroTop < windowHeight && heroTop + heroHeight > 0) {
+        const progress = (windowHeight - heroTop) / (windowHeight + heroHeight);
+        const translateY = progress * 50; // Move up to 50px
+        const scale = 1 + (progress * 0.1); // Scale up to 1.1
+        
+        heroBg.style.transform = `translateY(${translateY}px) scale(${scale})`;
+      }
+    }
+
+    // Hero content parallax (moves slower than background)
+    if (heroContent) {
+      const heroRect = heroContent.getBoundingClientRect();
+      const heroTop = heroRect.top;
+      const heroHeight = heroRect.height;
+      
+      if (heroTop < windowHeight && heroTop + heroHeight > 0) {
+        const progress = (windowHeight - heroTop) / (windowHeight + heroHeight);
+        const translateY = progress * 25; // Move up to 25px (slower than background)
+        
+        heroContent.style.transform = `translateY(${translateY}px)`;
+      }
+    }
+
+    // Sofa image parallax
+    if (sofaImage) {
+      const sofaRect = sofaImage.getBoundingClientRect();
+      const sofaTop = sofaRect.top;
+      const sofaHeight = sofaRect.height;
+      
+      if (sofaTop < windowHeight && sofaTop + sofaHeight > 0) {
+        const progress = (windowHeight - sofaTop) / (windowHeight + sofaHeight);
+        const translateX = progress * 30; // Move right to 30px
+        const translateY = progress * 20; // Move up to 20px
+        
+        sofaImage.style.transform = `translate(${translateX}px, ${translateY}px)`;
+      }
+    }
+
+    // African image parallax
+    if (africanImage) {
+      const africanRect = africanImage.getBoundingClientRect();
+      const africanTop = africanRect.top;
+      const africanHeight = africanRect.height;
+      
+      if (africanTop < windowHeight && africanTop + africanHeight > 0) {
+        const progress = (windowHeight - africanTop) / (windowHeight + africanHeight);
+        const translateX = -progress * 25; // Move left to -25px
+        const translateY = progress * 15; // Move up to 15px
+        
+        africanImage.style.transform = `translate(${translateX}px, ${translateY}px)`;
+      }
+    }
+
+    // Generic parallax elements with data-parallax attribute
+    parallaxElements.forEach(element => {
+      const rect = element.getBoundingClientRect();
+      const top = rect.top;
+      const height = rect.height;
+      
+      if (top < windowHeight && top + height > 0) {
+        const speed = parseFloat(element.dataset.parallax) || 0.5;
+        const progress = (windowHeight - top) / (windowHeight + height);
+        const translateY = progress * (100 * speed); // Adjust based on speed attribute
+        
+        element.style.transform = `translateY(${translateY}px)`;
+      }
+    });
+
+    lastScrollY = scrollY;
+    ticking = false;
+  }
+
+  function requestParallaxUpdate() {
+    if (!ticking) {
+      window.requestAnimationFrame(updateParallax);
+      ticking = true;
+    }
+  }
+
+  // Add smooth transitions to parallax elements
+  function addParallaxTransitions() {
+    const elements = [heroBg, heroContent, sofaImage, africanImage, ...parallaxElements].filter(Boolean);
+    
+    elements.forEach(element => {
+      element.style.transition = 'transform 0.1s ease-out';
+      element.style.willChange = 'transform';
+    });
+  }
+
+  // Initialize parallax
+  function initParallax() {
+    addParallaxTransitions();
+    updateParallax();
+  }
+
+  // Event listeners
+  window.addEventListener('scroll', requestParallaxUpdate, { passive: true });
+  window.addEventListener('resize', initParallax);
+  window.addEventListener('DOMContentLoaded', initParallax);
+  
+  // Initial setup
+  initParallax();
+})();
+

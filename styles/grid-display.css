@@ -118,6 +118,7 @@
 
       .grid-img-container{
         top: 0 !important;
+        z-index: 0;
       }
     }
 
@@ -149,7 +150,7 @@
       width: 100%;
       max-width: 10em;
       height: max-content;
-      z-index: 0;
+      z-index: -1;
     }
   }
 }
